@@ -46,3 +46,12 @@ if deps:
         tv = d.version
         print(g, a, v, tg, ta, tv)
 ```
+```
+pom = POM.from_url('file:///Users/soloking/.m2/repository/jakarta/platform/jakarta.jakartaee-bom/9.0.0/jakarta.jakartaee-bom-9.0.0.pom')
+# pom._urls = ['pomFile']
+g = pom.get_group_id()
+a = pom.get_artifact()
+v = pom.get_version()
+
+print(g, a, v)
+```
